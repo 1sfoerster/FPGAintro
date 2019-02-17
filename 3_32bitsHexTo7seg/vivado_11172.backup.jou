@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 15 12:09:01 2019
+# Process ID: 11172
+# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10588 C:\Users\SET253-17U.HCCMAIN\Documents\GitHub\ENES247\lab3-ReusableBCDhex7segDisplayCode\5_32bitsHexTo7seg\thirtyTwoBitsHexTo7segAnd16LEDs.xpr
+# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/vivado.log
+# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+refresh_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_design synth_1
+report_utilization -name utilization_1
+close_project

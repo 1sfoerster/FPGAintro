@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550338159">
+  <File Type="BITSTR-BMM" Name="thirtyTwobitHexTo16LEDs_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="thirtyTwobitHexTo16LEDs_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="thirtyTwobitHexTo16LEDs_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="thirtyTwobitHexTo16LEDs.tcl"/>
+  <File Type="OPT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="thirtyTwobitHexTo16LEDs_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="thirtyTwobitHexTo16LEDs_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="thirtyTwobitHexTo16LEDs_reports.tcl"/>
+  <File Type="OPT-DRC" Name="thirtyTwobitHexTo16LEDs_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="thirtyTwobitHexTo16LEDs.hwdef"/>
+  <File Type="PWROPT-DCP" Name="thirtyTwobitHexTo16LEDs_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="thirtyTwobitHexTo16LEDs_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="thirtyTwobitHexTo16LEDs_placed.dcp"/>
+  <File Type="PLACE-IO" Name="thirtyTwobitHexTo16LEDs_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="thirtyTwobitHexTo16LEDs_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="thirtyTwobitHexTo16LEDs_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="thirtyTwobitHexTo16LEDs_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="thirtyTwobitHexTo16LEDs_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="thirtyTwobitHexTo16LEDs_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="thirtyTwobitHexTo16LEDs_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="thirtyTwobitHexTo16LEDs.bgn"/>
+  <File Type="PLACE-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="thirtyTwobitHexTo16LEDs_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="thirtyTwobitHexTo16LEDs.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="thirtyTwobitHexTo16LEDs_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="thirtyTwobitHexTo16LEDs_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="thirtyTwobitHexTo16LEDs.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="thirtyTwobitHexTo16LEDs_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="thirtyTwobitHexTo16LEDs_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="thirtyTwobitHexTo16LEDs_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="thirtyTwobitHexTo16LEDs_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="thirtyTwobitHexTo16LEDs_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="thirtyTwobitHexTo16LEDs.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="thirtyTwobitHexTo16LEDs_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="thirtyTwobitHexTo16LEDs.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="thirtyTwobitHexTo16LEDs_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="thirtyTwobitHexTo16LEDs_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="thirtyTwobitHexTo16LEDs.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="thirtyTwobitHexTo16LEDs_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="thirtyTwobitHexTo16LEDs_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="thirtyTwobitHexTo16LEDs_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="thirtyTwobitHexTo16LEDs_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="thirtyTwobitHexTo16LEDs_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="thirtyTwobitHexTo16LEDs_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="thirtyTwobitHexTo16LEDs_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="thirtyTwobitHexTo16LEDs_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="thirtyTwobitHexTo16LEDs_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="thirtyTwobitHexTo16LEDs_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="thirtyTwobitHexTo16LEDs_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="thirtyTwobitHexTo16LEDs_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="thirtyTwobitHexTo16LEDs_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="thirtyTwobitHexTo16LEDs_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="thirtyTwobitHexTo16LEDs_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="thirtyTwobitHexTo16LEDs_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="thirtyTwobitHexTo16LEDs_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="thirtyTwobitHexTo16LEDs_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="thirtyTwobitHexTo16LEDs_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="thirtyTwobitHexTo16LEDs.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="thirtyTwobitHexTo16LEDs_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="thirtyTwobitHexTo16LEDs.rbt"/>
+  <File Type="BITSTR-NKY" Name="thirtyTwobitHexTo16LEDs.nky"/>
+  <File Type="BG-DRC" Name="thirtyTwobitHexTo16LEDs.drc"/>
+  <File Type="RDI-RDI" Name="thirtyTwobitHexTo16LEDs.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../32bitHexTo16LEDs.sv"/>
+        <Attr Name="ImportTime" Val="1550216488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="thirtyTwobitHexTo16LEDs"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1550071339"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

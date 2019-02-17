@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 16 07:41:40 2019
+# Process ID: 7844
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/1_1_Parallel_b
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8340 C:\Users\FoersterGame\Documents\GitHub\FPGAintro\1_1_Parallel_b\1_1_Parallel_b.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/1_1_Parallel_b/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/1_1_Parallel_b\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/FPGAintro/1_1_Parallel_b/1_1_Parallel_b.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project

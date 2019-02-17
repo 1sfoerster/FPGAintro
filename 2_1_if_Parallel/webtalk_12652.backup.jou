@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 16 16:13:49 2019
+# Process ID: 12652
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_1_if_Parallel
+# Command line: wbtcv.exe -mode batch -source C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_1_if_Parallel_clocked/2_1_if_Parallel_clocked.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_1_if_Parallel/webtalk.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_1_if_Parallel\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_1_if_Parallel_clocked/2_1_if_Parallel_clocked.hw/webtalk/labtool_webtalk.tcl -notrace

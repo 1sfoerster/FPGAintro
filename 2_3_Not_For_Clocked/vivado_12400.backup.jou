@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 17 11:32:04 2019
+# Process ID: 12400
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_3_Not_For_Clocked
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1704 C:\Users\FoersterGame\Documents\GitHub\FPGAintro\2_3_Not_For_Clocked\Not_For_Clocked.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_3_Not_For_Clocked/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_3_Not_For_Clocked\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_3_Not_For_Clocked/Not_For_Clocked.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1

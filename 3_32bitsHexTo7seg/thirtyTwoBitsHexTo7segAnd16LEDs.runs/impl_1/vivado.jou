@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 16 12:29:46 2019
+# Process ID: 7024
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1
+# Command line: vivado.exe -log thirtyTwobitHexTo16LEDs.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source thirtyTwobitHexTo16LEDs.tcl -notrace
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1/thirtyTwobitHexTo16LEDs.vdi
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source thirtyTwobitHexTo16LEDs.tcl -notrace
