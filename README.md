@@ -16,15 +16,15 @@ Explore circuits created using a C like programming language  called **Verilog**
 ## Requirements
 
 Have Installed Vivado software from Xilinx  
-Downloaded and unziped these bit files  
-A Nexys 4 DDR board from Digilent.   
+[Downloaded and unziped these bit files](https://drive.google.com/open?id=11ywLlMnFUoLDhiu63mW3tz9Vmd1-J4VO)  
+Obtained a [Nexys 4 DDR board](https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual) from Digilent.   
 Ability to move switches and watch LEDs.   
 
 ## Procedures
 
 Take board out of the case. Foam is anti-static. Don't want to turn board on while on foam.  
 Turn board off (if on), connect USB cable to computer first, then to the board second.  
-Turn board on.   
+Turn board on.  Should see a demo program.  
 Start Vivado.    
 On left click on > PROGRAM AND DEBUG  
 Click on > Open Hardware Manager  
