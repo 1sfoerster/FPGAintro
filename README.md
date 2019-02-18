@@ -64,11 +64,11 @@ Navigate to the BitStream folder by clicking on the up arrow three times
 
 ![1550508297265](assets/1550508297265.png)
 
-Then choose the  bitfile folder
+Open the  bitfile folder by double clicking on it. 
 
 ![1550508475116](assets/1550508475116.png)
 
-Then click on the bit file called 0_1_HelloWorld.bit
+Then double click on the bit file called 0_1_HelloWorld.bit
 
 ![1550508536717](assets/1550508536717.png)
 
@@ -77,6 +77,10 @@ Then program the FPGA. By clicking on the program button.
 ![1550508653597](assets/1550508653597.png)
 
 The demo program will stop running on the FPGA. It has been replaced by a new circuit. The code for it is below. See if you can match up the code with what the switches do.
+
+##### STOP ... FLICK THE SWITCHES ON THE NEXYS 4 DDR BOARD. CAN YOU CONTROL THE LED's? CAN YOU SEE THE CODE BELOW THAT CREATED THIS CIRCUIT?
+
+##### THESE NEXT STEPS ARE TO BE REPEATED TO LOOK AT MANY CIRCUITs. 
 
 The goal is to go through these bit files, looking at the code and circuit built below, one file at a time.
 
