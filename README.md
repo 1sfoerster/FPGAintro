@@ -18,7 +18,7 @@ Explore circuits created using a C like programming language  called **Verilog**
 ## Requirements
 
 Have Installed Vivado software from Xilinx  
-[Downloaded and unziped these bit files](https://drive.google.com/open?id=11ywLlMnFUoLDhiu63mW3tz9Vmd1-J4VO)  
+[Downloaded and unzip these bit files](https://drive.google.com/open?id=11ywLlMnFUoLDhiu63mW3tz9Vmd1-J4VO)  
 Obtained a [Nexys 4 DDR board](https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual) from Digilent.   
 Ability to move switches and watch LEDs.    
 This is optional ... [all the Vivado Projects can be downloaded from GitHub](https://github.com/1sfoerster/FGPAintro) ... including this presentation.  
