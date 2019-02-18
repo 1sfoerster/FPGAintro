@@ -11,14 +11,14 @@ Case
 
 ## Goal
 
-Explore how to circuits created using a C like programming language  called **Verilog**.   
+Explore circuits created using a C like programming language  called **Verilog**.   
 
 ## Requirements
 
-Installed Vivado software from Xilinx  
-This repository downloaded and unzipped  
+Have Installed Vivado software from Xilinx  
+Downloaded and unziped these bit files  
 A Nexys 4 DDR board from Digilent.   
-Ability to move switches and watch LEDs.  
+Ability to move switches and watch LEDs.   
 
 ## Procedures
 
@@ -79,6 +79,8 @@ Navigate to the BitStream folder unzipped and choose the bit file 0_1_Hello Worl
 ### Line order DOES Matter
 
 #### 1_2_Sequential or Blocking
+
+Should never use always_latch. This was a test to see if the RTL schematic contained a Latch. It doesn't. Even the Register Transfer Analysis (RTL) part of synthesis strips out the Latch. Latches are evil in most circuits. 
 
 ![1550327517116](assets/1550327517116.png)
 
@@ -148,142 +150,31 @@ This turns a 4 digit hex number (0-15) into a 6 digit decimal number (tens, ones
 
 #### 2_3_Not_For_Clocked
 
-C programmers may expect that nested For loops will work. They can be used to assign variables once within an always_ff, but this is not typically what a for loop does. Manual clock testing will wear out the physical switches on the Nexsy4 DDR board. Adding a clock will not work. If you try, the synthesizer will try to random things. 
+Programmers may expect that nested For loops will work inside always_ff or a clocked circuit. They can work. And they can not depending upon what you try to do in the loop. Think of global and local variables. Now think of the opposite. Imagine Local variables that can not be mentioned anywhere else in the code. 
 
-The combinatory version may work, but will be come huge, ugly and unsustainable .. How would you grow it to 64 bits? 
+How does the synthesizer create error messages around this situation? How does a designer work around these constraints of the Verilog language? Concepts called port interface drawings, datapaths (combinational circuits), control paths (clocked circuits), finite state machines, algorithmic state machines, ... have evolved. 
 
-So this version uses case and if commands and another concept that allows programs to grow arbitrarily large called Parameters. 
+Without these concepts, just playing around with manual testing using a clock may work but the minute a 100Mhz clock is hooked up, it doesn't work. There is a brick wall of breaking Nexys 4 DDR switches, of  the synthesizer creating a circuit with missing parts, weird connections and of almost random error messages. One can not learn this through hacking (creating small tests to see what works).
 
-```
-// from https://www.nandland.com/vhdl/modules/double-dabble.html
-module Binary_to_BCD
-  #(parameter INPUT_WIDTH = 7,
-    parameter DECIMAL_DIGITS = 3,
-    parameter s_IDLE              = 3'b000,
-    parameter s_SHIFT             = 3'b001,
-    parameter s_CHECK_SHIFT_INDEX = 3'b010,
-    parameter s_ADD               = 3'b011,
-    parameter s_CHECK_DIGIT_INDEX = 3'b100,
-    parameter s_BCD_DONE          = 3'b101
-    )
-  (
-   input                         clk, // this automatic, not manual
-   input [INPUT_WIDTH-1:0]       i_Binary, // seven switches on the right of the board .. input hex
-   input                         i_Start, // sw on far left that starts the calculation after hex is entered
-   output [DECIMAL_DIGITS*4-1:0] o_BCD, // LED 7:0 on the right
-   output                        o_DV   // LED 15 on the far left this is the overflow, carry 
-   );
-   
-  reg [2:0] r_SM_Main = s_IDLE;
-   
-  // The vector that contains the output BCD
-  reg [DECIMAL_DIGITS*4-1:0] r_BCD = 0;
-    
-  // The vector that contains the input binary value being shifted.
-  reg [INPUT_WIDTH-1:0]      r_Binary = 0;
-      
-  // Keeps track of which Decimal Digit we are indexing
-  reg [DECIMAL_DIGITS-1:0]   r_Digit_Index = 0;
-    
-  // Keeps track of which loop iteration we are on.
-  // Number of loops performed = INPUT_WIDTH
-  reg [7:0]                  r_Loop_Count = 0;
-  wire [3:0]                 w_BCD_Digit;
-  reg                        r_DV = 1'b0;                       
-    
-  always @(posedge clk)
-    begin 
-      case (r_SM_Main)  
-        // Stay in this state until i_Start comes along
-        s_IDLE :
-          begin
-            r_DV <= 1'b0;
-             
-            if (i_Start == 1'b1)
-              begin
-                r_Binary  <= i_Binary;
-                r_SM_Main <= s_SHIFT;
-                r_BCD     <= 0;
-              end
-            else
-              r_SM_Main <= s_IDLE;
-          end
-                 
-        // Always shift the BCD Vector until we have shifted all bits through
-        // Shift the most significant bit of r_Binary into r_BCD lowest bit.
-        s_SHIFT :
-          begin
-            r_BCD     <= r_BCD << 1;
-            r_BCD[0]  <= r_Binary[INPUT_WIDTH-1];
-            r_Binary  <= r_Binary << 1;
-            r_SM_Main <= s_CHECK_SHIFT_INDEX;
-          end          
-         
-        // Check if we are done with shifting in r_Binary vector
-        s_CHECK_SHIFT_INDEX :
-          begin
-            if (r_Loop_Count == INPUT_WIDTH-1)
-              begin
-                r_Loop_Count <= 0;
-                r_SM_Main    <= s_BCD_DONE;
-              end
-            else
-              begin
-                r_Loop_Count <= r_Loop_Count + 1;
-                r_SM_Main    <= s_ADD;
-              end
-          end
-                 
-        // Break down each BCD Digit individually.  Check them one-by-one to
-        // see if they are greater than 4.  If they are, increment by 3.
-        // Put the result back into r_BCD Vector.  
-        s_ADD :
-          begin
-            if (w_BCD_Digit > 4)
-              begin                                     
-                r_BCD[(r_Digit_Index*4)+:4] <= w_BCD_Digit + 3;  
-              end
-             
-            r_SM_Main <= s_CHECK_DIGIT_INDEX; 
-          end       
-                
-        // Check if we are done incrementing all of the BCD Digits
-        s_CHECK_DIGIT_INDEX :
-          begin
-            if (r_Digit_Index == DECIMAL_DIGITS-1)
-              begin
-                r_Digit_Index <= 0;
-                r_SM_Main     <= s_SHIFT;
-              end
-            else
-              begin
-                r_Digit_Index <= r_Digit_Index + 1;
-                r_SM_Main     <= s_ADD;
-              end
-          end
-         
-        s_BCD_DONE :
-          begin
-            r_DV      <= 1'b1;
-            r_SM_Main <= s_IDLE;
-          end        
-        default :
-          r_SM_Main <= s_IDLE;
-            
-      endcase
-    end // always @ (posedge clk)  
- 
-   
-  assign w_BCD_Digit = r_BCD[r_Digit_Index*4 +: 4];
-       
-  assign o_BCD = r_BCD;
-  assign o_DV  = r_DV;
-      
-endmodule // Binary_to_BCD 
-```
+On the other had, the combinatory version above may work, but will become huge, ugly and unsustainable .. How would you grow it to 64 bits? 
 
+This version uses case and if commands and another concept that allows programs to grow arbitrarily large called Parameters. There is one big control_path and one tiny data_path at the end. 
 
+![1550494753095](assets/1550494753095.png)
+
+![1550495809977](assets/1550495809977.png)
 
 ![1550418200633](assets/1550418200633.png)
 
-3  
+### 3 _7segmentDisplayDemo
+
+The goal here is to present the code .. and a demonstration. The next step after this one is to merge the above code and with the code below. This will require half a semester's worth of concepts that end with complete separation of combinational circuits (called datapath) and clocked circuits (called controlpath). This circuit is pretty good. Certain variables are changed inside the two always_ff control path constructs (c_input, count_clk, anode_clk, segment) and then only looked at by everything else (called the data path).
+
+![1550492732379](assets/1550492732379.png)
+
+![1550492873565](assets/1550492873565.png)
+
+#### 4 Please turn the board off before disconnecting the USB cable.
+
+This is where surges and spikes occur that disable or kill the USB port on the computer or the Nexys 4 DDR board. 
+

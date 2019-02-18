@@ -60,21 +60,24 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/Documents/GitHub/FPGAintro/3_32bitsHexTo7seg/.Xil/Vivado-12424-DESKTOP-KB2R4MG/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/FPGAintro/3_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.cache/wt [current_project]
+  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/FPGAintro/3_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.xpr [current_project]
   set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/synth_1/thirtyTwobitHexTo16LEDs.dcp
-  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/-7FourSevenSegDisplays/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc
+  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/FPGAintro/3_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.runs/synth_1/thirtyTwobitHexTo16LEDs.dcp
+  read_xdc C:/Users/FoersterGame/Documents/GitHub/FPGAintro/3_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc
   link_design -top thirtyTwobitHexTo16LEDs -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -147,24 +150,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force thirtyTwobitHexTo16LEDs.mmi }
-  write_bitstream -force thirtyTwobitHexTo16LEDs.bit 
-  catch {write_debug_probes -quiet -force thirtyTwobitHexTo16LEDs}
-  catch {file copy -force thirtyTwobitHexTo16LEDs.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

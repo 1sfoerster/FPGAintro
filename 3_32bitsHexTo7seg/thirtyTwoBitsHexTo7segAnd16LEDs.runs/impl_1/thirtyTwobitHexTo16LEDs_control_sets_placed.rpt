@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Feb 16 12:30:05 2019
+| Date         : Mon Feb 18 07:55:32 2019
 | Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file thirtyTwobitHexTo16LEDs_control_sets_placed.rpt
 | Design       : thirtyTwobitHexTo16LEDs
@@ -64,8 +64,8 @@ Table of Contents
 |  clk_IBUF_BUFG | dp_i_1_n_0            |                  |                1 |              1 |
 |  clk_IBUF_BUFG |                       |                  |                1 |              3 |
 |  clk_IBUF_BUFG |                       | reset_IBUF       |               13 |             32 |
-|  clk_IBUF_BUFG | count_clk[31]_i_1_n_0 | reset_IBUF       |               11 |             32 |
 |  clk_IBUF_BUFG | c_input[0]_i_1_n_0    | reset_IBUF       |                8 |             32 |
+|  clk_IBUF_BUFG | count_clk[31]_i_1_n_0 | reset_IBUF       |               11 |             32 |
 +----------------+-----------------------+------------------+------------------+----------------+
 
 

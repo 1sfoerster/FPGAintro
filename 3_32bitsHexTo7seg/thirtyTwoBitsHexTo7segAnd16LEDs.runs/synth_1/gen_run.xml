@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550338159">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550494193">
   <File Type="PA-TCL" Name="thirtyTwobitHexTo16LEDs.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="thirtyTwobitHexTo16LEDs_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="thirtyTwobitHexTo16LEDs_reports.tcl"/>
