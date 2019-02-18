@@ -1,6 +1,6 @@
-# FPGA Introduction url: 
+# https://github.com/1sfoerster
 
-# https://github.com/1sfoerster/FGPAintro
+# Scroll down to FGPAintro and click on it:
 
 ![1550411032640](assets/1550411032640.png)
 
