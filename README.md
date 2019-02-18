@@ -2,6 +2,10 @@
 
 # Scroll down to FGPAintro and click on it:
 
+![1550509130876](assets/1550509130876.png)
+
+Scroll down to see the README.md file contents (this file)
+
 ![1550411032640](assets/1550411032640.png)
 
 ## Assumption you have some experience with Loops
@@ -23,7 +27,6 @@ Ability to move switches and watch LEDs.
 Download  [all the Vivado Projects](https://github.com/1sfoerster/FGPAintro/archive/master.zip) ... including this presentation.  
 Click on the file name, then extract three times.   
 Should unpack over 1,700 files into the downloads folder into subfolder called FPGAintro-master.   
-Close browser.
 
 ## Procedures
 
@@ -33,11 +36,11 @@ Turn board on.  Will see LED's on the board flash a demo circuit.
 Find unzipped files in downloads folder. Open the first project 0_1_HelloWorld  by 
 double clicking on the Vivado Project File.
 
-![1550507894843](1550507894843.png)   
+![1550507894843](assets/1550507894843.png)   
 
 Vivado takes a while to start.   After initializing the project, it should look like this.
 
-![1550508032032](1550508032032.png)
+![1550508032032](assets/1550508032032.png)
 
 
 Click on > Open Hardware Manager  
@@ -55,35 +58,35 @@ Wait through two splash screens until this appears and click on Program Device
 
 Click on the three dots below
 
-![1550508185676](1550508185676.png)
+![1550508185676](assets/1550508185676.png)
 
 Navigate to the BitStream folder by clicking on the up arrow three times   
 
-![1550508297265](1550508297265.png)
+![1550508297265](assets/1550508297265.png)
 
 Then choose the  bitfile folder
 
-![1550508475116](1550508475116.png)
+![1550508475116](assets/1550508475116.png)
 
 Then click on the bit file called 0_1_HelloWorld.bit
 
-![1550508536717](1550508536717.png)
+![1550508536717](assets/1550508536717.png)
 
 Then program the FPGA. By clicking on the program button. 
 
-![1550508653597](1550508653597.png)
+![1550508653597](assets/1550508653597.png)
 
-The demo program will stop running on the FPGA. The code for this program is below. 
+The demo program will stop running on the FPGA. It has been replaced by a new circuit. The code for it is below. See if you can match up the code with what the switches do.
 
 The goal is to go through these bit files, looking at the code and circuit built below, one file at a time.
 
-To go to the next program/circuit, click on the three dots again.
+Here is how to go onto the next  program/circuit. Click on the three dots again.
 
-![1550508185676](1550508185676.png)
+![1550508185676](assets/1550508185676.png)
 
 and choose a different name from this list.
 
-![1550508536717](1550508536717.png)
+![1550508536717](assets/1550508536717.png)
 
 ## 0 Hello World
 
