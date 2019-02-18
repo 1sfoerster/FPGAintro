@@ -47,7 +47,8 @@ Click on the three dots
 
 ![1550318231912](assets/1550318231912.png)
 
-Navigate to the BitStream folder unzipped and choose the bit file 0_1_Hello World
+Navigate to the BitStream folder unzipped and choose the bit file 0_1_Hello World   
+Then click Program above.  The next step is to play with the switches and look at LEDs.
 
 ## 0 Hello World
 
