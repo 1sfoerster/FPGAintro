@@ -17,21 +17,31 @@ Explore circuits created using a C like programming language  called **Verilog**
 
 ## Requirements
 
-Have Installed Vivado software from Xilinx  
-[Downloaded and unzip these bit files](https://drive.google.com/open?id=11ywLlMnFUoLDhiu63mW3tz9Vmd1-J4VO)  
-Obtained a [Nexys 4 DDR board](https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual) from Digilent.   
+Have Installed Vivado software from Xilinx   
+Get a [Nexys 4 DDR board](https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/reference-manual) from instructor.  
 Ability to move switches and watch LEDs.    
-This is optional ... [all the Vivado Projects can be downloaded from GitHub](https://github.com/1sfoerster/FGPAintro) ... including this presentation.  
+Download  [all the Vivado Projects](https://github.com/1sfoerster/FGPAintro/archive/master.zip) ... including this presentation.  
+Click on the file name, then extract three times.   
+Should unpack over 1,700 files into the downloads folder into subfolder called FPGAintro-master.   
+Close browser.
 
 ## Procedures
 
 Take board out of the case. Foam is anti-static. Don't want to turn board on while on foam.  
 Turn board off (if on), connect USB cable to computer first, then to the board second.  
-Turn board on.  Should see a demo program.  
-Start Vivado.    
-On left click on > PROGRAM AND DEBUG  
+Turn board on.  Will see LED's on the board flash a demo circuit.  
+Find unzipped files in downloads folder. Open the first project 0_1_HelloWorld  by 
+double clicking on the Vivado Project File.
+
+![1550507894843](1550507894843.png)   
+
+Vivado takes a while to start.   After initializing the project, it should look like this.
+
+![1550508032032](1550508032032.png)
+
+
 Click on > Open Hardware Manager  
-Click on Open target    
+Click on Open target     
 
 ![1550317816391](assets/1550317816391.png)
 
@@ -43,12 +53,37 @@ Wait through two splash screens until this appears and click on Program Device
 
 ![1550318089230](assets/1550318089230.png)
 
-Click on the three dots
+Click on the three dots below
 
-![1550318231912](assets/1550318231912.png)
+![1550508185676](1550508185676.png)
 
-Navigate to the BitStream folder unzipped and choose the bit file 0_1_Hello World   
-Then click Program above.  The next step is to play with the switches and look at LEDs.
+Navigate to the BitStream folder by clicking on the up arrow three times   
+
+![1550508297265](1550508297265.png)
+
+Then choose the  bitfile folder
+
+![1550508475116](1550508475116.png)
+
+Then click on the bit file called 0_1_HelloWorld.bit
+
+![1550508536717](1550508536717.png)
+
+Then program the FPGA. By clicking on the program button. 
+
+![1550508653597](1550508653597.png)
+
+The demo program will stop running on the FPGA. The code for this program is below. 
+
+The goal is to go through these bit files, looking at the code and circuit built below, one file at a time.
+
+To go to the next program/circuit, click on the three dots again.
+
+![1550508185676](1550508185676.png)
+
+and choose a different name from this list.
+
+![1550508536717](1550508536717.png)
 
 ## 0 Hello World
 
